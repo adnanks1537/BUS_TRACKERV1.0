@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>College Bus Management Dashboard</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.7.1/leaflet.css" />
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>College Bus Management Dashboard</h1>
+        <p id="datetime"></p>
+    </header>
+    <div class="container">
+        <div class="panel" id="status-overview">
+            <h2>Bus Status Overview</h2>
+            <canvas id="statusChart"></canvas>
+            <canvas id="routeChart"></canvas>
+        </div>
+        <div class="panel" id="map">
+            <h2>Real-time Bus Locations</h2>
+            <div id="mapid"></div>
+        </div>
+        <div class="panel" id="bus-details">
+            <h2>Bus and Driver Details</h2>
+            <input type="text" id="filter" placeholder="Filter buses...">
+            <table id="busTable">
+                <thead>
+                    <tr>
+                        <th>Bus Number</th>
+                        <th>Route</th>
+                        <th>Driver Name</th>
+                        <th>Contact</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Rows will be populated by JavaScript -->
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <div class="panel" id="selected-bus-details">
+        <h2>Selected Bus Details</h2>
+        <p id="bus-info"></p>
+        <h2>Bus Route Map</h2>
+        <div id="routeMapid"></div>
+    </div>
+    <footer>
+        <button id="export">Export Data</button>
+        <p>Last Update: <span id="lastUpdate"></span></p>
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.7.1/leaflet.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
