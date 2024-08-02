@@ -1,0 +1,50 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f9;
+}
+
+header {
+    background-color: #343a40;
+}
+
+.card-header {
+    background-color: #6c757d;
+}
+
+footer {
+    background-color: #f8f9fa;
+}
+
+.status {
+    padding: 5px 10px;
+    border-radius: 5px;
+    color: white;
+    text-align: center;
+}
+
+.on-time {
+    background-color: #28a745;
+}
+
+.delayed {
+    background-color: #ffc107;
+}
+
+.off-duty {
+    background-color: #dc3545;
+}
+
+#mapid, #routeMapid {
+    height: 400px;
+}
+
+#recent-locations {
+    list-style-type: none;
+    padding: 0;
+}
+
+#recent-locations li {
+    padding: 5px;
+    border: 1px solid #ddd;
+    margin-bottom: 5px;
+}
